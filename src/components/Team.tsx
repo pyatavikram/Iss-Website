@@ -2,36 +2,41 @@ import { Card, CardContent } from './ui/card';
 import { Badge } from './ui/badge';
 import { ImageWithFallback } from './figma/ImageWithFallback';
 import { Github, Linkedin, Twitter } from 'lucide-react';
+import { Button } from './ui/button';
 
 const team = [
   {
-    name: "Sarah Chen",
-    role: "CEO & Co-founder",
-    image: "https://images.unsplash.com/photo-1659353220597-71b8c6a56259?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMGRldmVsb3BlcnxlbnwxfHx8fDE3NTc5NTcwNzh8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    bio: "Former Google engineer with 12+ years of experience in scaling tech companies.",
-    skills: ["Strategy", "Leadership", "Product Vision"]
+    name: 'Sarah Chen',
+    role: 'CEO & Co-founder',
+    image:
+      'https://images.unsplash.com/photo-1580894742597-87bc8789db3d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw0fHxwcm9mZXNzaW9uYWwlMjB3b21hbiUyMGRldmVsb3BlcnxlbnwxfHx8fDE3NTc5NTg1NTd8MA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    bio: 'Former Google engineer with 12+ years of experience in scaling tech companies.',
+    skills: ['Strategy', 'Leadership', 'Product Vision'],
   },
   {
-    name: "Marcus Johnson",
-    role: "CTO & Co-founder",
-    image: "https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhwcm9mZXNzaW9uYWwlMjBtYW4lMjB0ZWNofGVufDF8fHx8MTc1Nzk1NzA3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    bio: "Full-stack architect passionate about building scalable, secure systems.",
-    skills: ["Architecture", "Cloud", "Security"]
+    name: 'Marcus Johnson',
+    role: 'CTO & Co-founder',
+    image:
+      'https://images.unsplash.com/photo-1556157382-97eda2d62296?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwyfHxwcm9mZXNzaW9uYWwlMjBtYW4lMjB0ZWNofGVufDF8fHx8MTc1Nzk1NzA3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    bio: 'Full-stack architect passionate about building scalable, secure systems.',
+    skills: ['Architecture', 'Cloud', 'Security'],
   },
   {
-    name: "Elena Rodriguez",
-    role: "Head of Design",
-    image: "https://images.unsplash.com/photo-1646579886741-12b59840c63f?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVjaCUyMHRlYW18ZW58MXx8fHwxNzU3OTU3MDc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    bio: "Award-winning designer with expertise in user experience and interface design.",
-    skills: ["UX/UI", "Design Systems", "Prototyping"]
+    name: 'Elena Rodriguez',
+    role: 'Head of Design',
+    image:
+      'https://images.unsplash.com/photo-1552664730-d307ca884978?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxkaXZlcnNlJTIwdGVjaCUyMHRlYW18ZW58MXx8fHwxNzU3OTU3MDc4fDA&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    bio: 'Award-winning designer with expertise in user experience and interface design.',
+    skills: ['UX/UI', 'Design Systems', 'Prototyping'],
   },
   {
-    name: "David Kim",
-    role: "Lead Developer",
-    image: "https://images.unsplash.com/photo-1635768229592-8c2532d33cb7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHhwcm9mZXNzaW9uYWwlMjBtYW4lMjB0ZWNofGVufDF8fHx8MTc1Nzk1NzA3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral",
-    bio: "Frontend specialist with deep expertise in React, TypeScript, and modern web technologies.",
-    skills: ["React", "TypeScript", "Performance"]
-  }
+    name: 'David Kim',
+    role: 'Lead Developer',
+    image:
+      'https://images.unsplash.com/photo-1542393545-10f5cde2c810?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHw3fHxwcm9mZXNzaW9uYWwlMjBtYW4lMjB0ZWNofGVufDF8fHx8MTc1Nzk1NzA3OHww&ixlib=rb-4.1.0&q=80&w=1080&utm_source=figma&utm_medium=referral',
+    bio: 'Frontend specialist with deep expertise in React, TypeScript, and modern web technologies.',
+    skills: ['React', 'TypeScript', 'Performance'],
+  },
 ];
 
 export function Team() {
@@ -42,18 +47,21 @@ export function Team() {
           <Badge variant="secondary" className="w-fit mx-auto">
             Our Team
           </Badge>
-          <h2 className="text-3xl md:text-4xl lg:text-5xl">
+          <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold">
             Meet the Experts Behind TechFlow
           </h2>
-          <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Our diverse team of talented professionals brings together decades of experience 
-            in technology, design, and business strategy.
+          <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
+            Our diverse team of talented professionals brings together decades
+            of experience in technology, design, and business strategy.
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
+        <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8">
           {team.map((member, index) => (
-            <Card key={index} className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
+            <Card
+              key={index}
+              className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
+            >
               <CardContent className="p-0">
                 <div className="relative overflow-hidden rounded-t-lg">
                   <ImageWithFallback
@@ -76,20 +84,24 @@ export function Team() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="p-6 space-y-3">
                   <div className="text-center space-y-1">
-                    <h3>{member.name}</h3>
+                    <h3 className="font-semibold text-lg">{member.name}</h3>
                     <p className="text-sm text-primary">{member.role}</p>
                   </div>
-                  
+
                   <p className="text-sm text-muted-foreground text-center">
                     {member.bio}
                   </p>
-                  
-                  <div className="flex flex-wrap gap-1 justify-center">
+
+                  <div className="flex flex-wrap gap-1 justify-center pt-2">
                     {member.skills.map((skill, skillIndex) => (
-                      <Badge key={skillIndex} variant="secondary" className="text-xs">
+                      <Badge
+                        key={skillIndex}
+                        variant="secondary"
+                        className="text-xs"
+                      >
                         {skill}
                       </Badge>
                     ))}
@@ -100,13 +112,11 @@ export function Team() {
           ))}
         </div>
 
-        <div className="text-center mt-12">
+        <div className="text-center mt-16">
           <p className="text-muted-foreground mb-4">
             Want to join our amazing team?
           </p>
-          <button className="text-primary hover:text-primary/80 transition-colors">
-            View Open Positions →
-          </button>
+          <Button variant="outline">View Open Positions →</Button>
         </div>
       </div>
     </section>
